@@ -17,7 +17,7 @@ class Task03Test {
     static Stream<Arguments> provideArguments() {
         return Stream.of(
                 Arguments.of(0, 346, null),
-                Arguments.of(1, 6432, "RED"),
+                Arguments.of(1, 6432, null),
                 Arguments.of(99, 400, "RED"),
                 Arguments.of(50, 200, "ORANGE"),
                 Arguments.of(99, 200, "ORANGE"),

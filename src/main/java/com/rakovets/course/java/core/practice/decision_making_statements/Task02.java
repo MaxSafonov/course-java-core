@@ -35,8 +35,17 @@ class Task02 {
      * </ul>
      */
     static String getGreetingByHour(int hour) {
-        //TODO
-        // Код, решающий задачу пишем ниже, при этом используя параметры метода
+        float hourN = hour;
+
+        if (hour >=0 && hour <= 5.59) {
+            return "Good night";
+        } else if (hour >=6 && hour <= 11.59) {
+            return "Good morning";
+        } else if (hour >=12 && hour <= 16.59) {
+            return "Good day";
+        } else if (hour >=18 && hour <= 23.59) {
+            return "Good evening";
+        }
         return null;
     }
 }

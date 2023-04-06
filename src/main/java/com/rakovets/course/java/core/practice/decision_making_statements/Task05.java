@@ -31,8 +31,45 @@ class Task05 {
      * @return месяц на английском языке (UPPER CASE)
      */
     static String getMonthName(byte monthNumber) {
-        //TODO
-        // Код, решающий задачу пишем ниже, при этом используя параметры метода
+        String text;
+        switch (monthNumber) {
+            case 1:
+                text = "January";
+                return text.toUpperCase();
+            case 2:
+                text = "February";
+                return text.toUpperCase();
+            case 3:
+                text = "March";
+                return text.toUpperCase();
+            case 4:
+                text = "April";
+                return text.toUpperCase();
+            case 5:
+                text = "May";
+                return text.toUpperCase();
+            case 6:
+                text = "June";
+                return text.toUpperCase();
+            case 7:
+                text = "July";
+                return text.toUpperCase();
+            case 8:
+                text = "August";
+                return text.toUpperCase();
+            case 9:
+                text = "September";
+                return text.toUpperCase();
+            case 10:
+                text = "October";
+                return text.toUpperCase();
+            case 11:
+                text = "November";
+                return text.toUpperCase();
+            case 12:
+                text = "December";
+                return text.toUpperCase();
+        }
         return null;
     }
 }
