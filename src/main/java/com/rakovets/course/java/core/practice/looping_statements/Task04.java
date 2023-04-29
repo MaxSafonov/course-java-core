@@ -33,8 +33,18 @@ class Task04 {
      * @return время для убийства RaidBoss (когда party не справляется за 24 часа, то вывести -1)
      */
     static int calculateRaidTime(int healthPoints, double regenerationPercentPerHour, int averageDamagePerHour) {
-        //TODO
-        // Код, решающий задачу пишем ниже, при этом используя параметры метода
-        return 0;
+        int hours = 0;
+        double healthAmount = healthPoints;
+
+        while (hours <= 24 && healthAmount > 0) {
+            double regen = (healthAmount / 100) * regenerationPercentPerHour;
+            healthAmount -= averageDamagePerHour;
+            healthAmount += regen;
+            hours++;
+        }
+        if (hours > 24) {
+            return -1;
+        }
+        return hours;
     }
 }
